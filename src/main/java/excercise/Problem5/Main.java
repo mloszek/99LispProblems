@@ -19,7 +19,7 @@ public class Main {
             reversedList.add(list.get(i));
         }
 
-        reversedList.forEach(integer -> System.out.println(integer));
+        reversedList.forEach(System.out::println);
 
     }
 }

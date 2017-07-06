@@ -12,7 +12,7 @@ public class Main {
 
         List<Integer> list = Arrays.asList(1, 3, 4, 3, 1);
 
-        boolean check = isPalidrome(list) ? true : false;
+        boolean check = isPalidrome(list);
 
         System.out.println("is palidrome: " + check);
 
