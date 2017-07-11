@@ -8,13 +8,11 @@ import java.util.List;
  */
 public class SublistCreator {
 
-    List<Integer> sublist = new ArrayList<>();
+    private List<Integer> sublist = new ArrayList<>();
 
     public void addToSublist(Integer integer){
 
         sublist.add(integer);
 
     }
-
-
 }

@@ -14,21 +14,24 @@ public class Main {
 
         List<List<Integer>> listBundle = new ArrayList<>();
 
-        List<Integer> sublist;
+        List<Integer> sublist = new ArrayList<>();
 
         int temp = 0;
 
         for (int i = 0; i < list.size(); i++) {
             if (i == 0){
                 temp = list.get(i);
+                sublist.add(list.get(i));
+            }else if (list.get(i) != temp){
+                listBundle.add(sublist);
+                temp = list.get(i);
                 sublist = new ArrayList<>();
                 sublist.add(list.get(i));
-                listBundle.add(sublist);
-            }else if (!(list.get(i) == temp)){
-                temp = list.get(i);
-
+            }else if ((list.get(i) == temp)){
+                sublist.add(list.get(i));
             }
         }
+        listBundle.add(sublist);
 
         listBundle.forEach(System.out::println);
 

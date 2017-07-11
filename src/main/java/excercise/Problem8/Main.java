@@ -18,13 +18,13 @@ public class Main {
         int temp = 0;
 
         for (int i = 0; i < list.size(); i++) {
-           if (i == 0){
-              temp = list.get(i);
-              singledList.add(list.get(i));
-           }else if (!(list.get(i) == temp)){
-               temp = list.get(i);
-               singledList.add(list.get(i));
-           }
+            if (i == 0) {
+                temp = list.get(i);
+                singledList.add(list.get(i));
+            } else if (list.get(i) != temp) {
+                temp = list.get(i);
+                singledList.add(list.get(i));
+            }
         }
 
         singledList.forEach(System.out::println);
