@@ -4,15 +4,11 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- *Creating sublists for duplicated elements
+ * Creating sublists for duplicated elements
  */
 public class SublistCreator {
 
-    List<Integer> sublist;
-
-    public SublistCreator(List<Integer> sublist) {
-        this.sublist = sublist;
-    }
+    List<Integer> sublist = new ArrayList<>();
 
     public void addToSublist(Integer integer){
 
