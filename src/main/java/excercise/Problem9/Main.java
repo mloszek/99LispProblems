@@ -11,7 +11,15 @@ public class Main {
 
         List<Integer> list = Arrays.asList(1, 2, 2, 5, 3, 7, 7, 3, 3, 3, 3, 8, 6, 6);
 
+        for (int i = 0; i < list.size(); i++) {
+            if (i == 0){
 
+
+
+            }
+
+
+        }
 
 
     }
