@@ -27,8 +27,21 @@ public class Main {
                 modList.add(integersEncoder.getCharacter());
             } else
                 modList.add(integersEncoder);
+        }//Problem 11 code
+
+        List<Integer> decList = new ArrayList<>();
+
+        for (Object object : modList) {
+            if (!(object instanceof IntegersEncoder)){
+                decList.add(Integer.parseInt(object.toString()));
+            }else {
+                for (int i = 0; i < ((IntegersEncoder) object).getAmount(); i++) {
+                    decList.add(Integer.parseInt(((IntegersEncoder) object).getCharacter()));
+                }
+            }
         }
 
+        decList.forEach(System.out::println);
 
     }
 }
