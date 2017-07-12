@@ -9,6 +9,14 @@ public class IntegersEncoder {
 
     String character;
 
+    public String getCharacter() {
+        return character;
+    }
+
+    public Integer getAmount() {
+        return amount;
+    }
+
     public IntegersEncoder(Integer amount, String character) {
         this.amount = amount;
         this.character = character;
