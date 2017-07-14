@@ -8,7 +8,7 @@ import java.util.List;
  * Splitting list into two parts
  */
 public class Main {
-    public static void main(String[] args){
+    public static void main(String[] args) {
 
         List<String> list = Arrays.asList("a", "b", "c", "d", "e", "f", "g", "h");
 
@@ -19,9 +19,9 @@ public class Main {
         int pivot = 3;
 
         for (int i = 0; i < list.size(); i++) {
-            if (i < pivot){
+            if (i < pivot) {
                 split1.add(list.get(i));
-            }else
+            } else
                 split2.add(list.get(i));
         }
 
