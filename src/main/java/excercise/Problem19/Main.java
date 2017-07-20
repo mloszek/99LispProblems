@@ -5,7 +5,7 @@ import java.util.Arrays;
 import java.util.List;
 
 /**
- * Swapping a list N places to the left..
+ * Swapping a list N places to the left
  */
 public class Main {
     public static void main(String[] args) {
