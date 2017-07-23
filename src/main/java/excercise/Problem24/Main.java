@@ -1,16 +1,25 @@
-package excercise.Problem22;
+package excercise.Problem24;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
+import java.util.Random;
 
 /**
- * Creating a list containing all integers within a given range
+ * Lotto: Drawing N different random numbers from the set 1..M
  */
 public class Main {
     public static void main(String[] args) {
 
-        listMake(4, -3).forEach(System.out::println);
+        List<Integer> list = listMake(1, 10);
+
+        int amountOfNumbers = 4;
+
+        Random random = new Random();
+
+        for (int i = 0; i < amountOfNumbers; i++) {
+            System.out.print(list.get(random.nextInt(list.size() - i)) + " ");
+        }
+
 
     }
 
